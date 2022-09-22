@@ -1,0 +1,85 @@
+.container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  animation: present 3s;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    z-index: 1;
+    margin-top: 150px;
+    font-size: 1.5rem;
+ 
+    animation-timing-function: ease-in-out;
+  }
+}
+
+
+.contfoto {
+  margin-top: 55px;
+  overflow: hidden;
+  width: 450px;
+  height: 350px;
+  animation: presentFoto 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.contfoto h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.contfoto span{
+  font-size: 4rem;
+}
+
+
+@keyframes presentFoto {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+@keyframes present {
+  0% {
+    background-color: transparent;
+    color:transparent;
+
+  }
+
+ 
+
+  100% {
+    background-color: initial;
+    color:white;
+   
+  }
+}
+@keyframes presentMedia {
+  0% {
+    background-color: transparent;
+    color: transparent;
+   
+  }
+
+  
+
+  100% {
+    background-color: initial;
+    color:white;
+ 
+  }
+}

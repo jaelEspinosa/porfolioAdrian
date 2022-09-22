@@ -1,0 +1,119 @@
+
+h1{
+  text-align: center;
+}
+.imagen{
+    max-width: 300px;
+}
+.divide{
+    flex:0.7
+}
+.linea{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin: 55px 0;
+}
+
+
+.contain{
+    margin:auto;
+    margin-top: 1rem;
+    width: 80vw;
+    height: 65vh;
+    max-width: 900px;
+    border: 1px solid white;
+    color:white;
+    overflow-y: scroll;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.500);
+    animation-name: present;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    box-shadow: 5px 5px 8px gray;
+}
+.cardContain{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;   
+    animation-name: presentImg;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+.fotoContain{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width:768px){
+    .cardContain{
+        flex-direction: row;
+    }
+    .description{
+        width: 50%;
+    }
+    .contain{
+        height: 70vh;
+    }
+}
+.contain::-webkit-scrollbar{
+    width: 5px;
+ 
+}
+.contain::-webkit-scrollbar-thumb{
+    background:whitesmoke;
+    border-radius: 10px;
+}
+.rrss{
+    width: 30px;
+}
+.rrssLittle{
+    width: 20px;
+    margin-left: 5px;
+    
+}
+.rrssContain{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    gap:10px;
+}
+.rrssContain a{
+    text-decoration: none;
+    color:white;
+    
+}
+.span{
+    
+    text-decoration: none;
+}
+@keyframes present {
+    0%{
+        border:transparent;
+        color:transparent;
+        background-color: transparent;
+        box-shadow: 5px 5px 8px transparent;
+
+    }
+    100%{
+        color:white;
+        background-color: rgba(0, 0, 0, 0.500);
+        border: 1px solid white;
+        box-shadow: 5px 5px 8px gray;
+    }
+    
+}
+@keyframes presentImg {
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%)
+    }
+
+    
+}
